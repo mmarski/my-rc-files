@@ -48,13 +48,13 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_cpp_no_include_search = 1
 let g:syntastic_cpp_remove_include_errors = 1
 " let g:syntastic_cpp_check_header = 1
-let g:syntastic_cpp_include_dirs = ['../inc','../../inc/cli','../../inc/connection','/repo/eteivma/mmgw/mrfp_appl/inc','$MMGW_GIT_REPO/virtual_common/trace/inc/']
+let g:syntastic_cpp_include_dirs = ['../inc','../../inc/','../../include/','../include/']
 
 syntax on
 set expandtab
 set tabstop=4
 set shiftwidth=4
-set textwidth=79
+set textwidth=0 wrapmargin=0
 set title
 set nu
 set hlsearch
