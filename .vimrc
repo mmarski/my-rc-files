@@ -54,13 +54,14 @@ syntax on
 set expandtab
 set tabstop=4
 set shiftwidth=4
-set textwidth=0 wrapmargin=0
+set textwidth=0 wrapmargin=0 "old: textwidth=79
 set title
 set nu
 set hlsearch
 set backspace=indent,eol,start
 set cursorline
 set autochdir
+set scrolloff=5
 " HTML
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
 
