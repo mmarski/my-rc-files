@@ -121,8 +121,10 @@ endfunction
 function! GetMode()
     if mode() ==# 'i'
         exe 'hi! User4 ctermfg=blue ctermbg=yellow'
-    else
+    elseif mode() ==# 'n'
         exe 'hi! User4 ctermfg=cyan ctermbg=blue'
+    else
+        exe 'hi! User4 ctermfg=black ctermbg=cyan'
     endif
     return g:currentmode[mode()]
 endfunction
